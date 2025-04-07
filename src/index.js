@@ -1,8 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import BioSite from "./BioSite";
-import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+import App from './app';
 
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<BioSite />);
+ReactDOM.render(
+  <HashRouter>
+    <App />
+  </HashRouter>,
+  document.getElementById('root')
+);
