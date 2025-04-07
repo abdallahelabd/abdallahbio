@@ -1,7 +1,7 @@
 // New Admin Chat Page - Stylish like WhatsApp
 import React, { useEffect, useState } from "react";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
-import { db } from "./firebaseConfig";
+import { db } from "./firebase";
 
 export default function AdminChatPage() {
   const [chatLog, setChatLog] = useState([]);
